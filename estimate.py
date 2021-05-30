@@ -2,7 +2,7 @@ import math
 import unittest
 import random
 class TestWallis(unittest.TestCase):
-    def wallis(n):
+    def wallis(self, n):
         pi_2 = 4/3
         for i in range(2,n+1):
             pi_2 *= (4*i*i)/(4*i*i - 1)
@@ -21,7 +21,7 @@ class TestWallis(unittest.TestCase):
 
 
 class TestMC(unittest.TestCase):
-    def monte_carlo(n):
+    def monte_carlo(self,n):
         count = 0
         for i in range(n):
             randx = random.random()
